@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> <a href="#">Traveler</a></div>
+            <ul class="links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="aboutme.html">About us</a></li>
+                <li> <a href="Destination.html">Destination</a></li>
+                <li> <a href="Blog.html">Blog</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="blog.html">Blog</a></li>
+            <li> <a href="Destination.html">Destination</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+        </div>
+    </header>
+    <div class="container">
+    <section class="contact-form">
+   
+        <h2>Contact us</h2>
+        <form action="submit-form">
+            <div class="form-row">
+            <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" requiered>
+            </div>
+            </div>
+
+           <div class="form-group">
+            <label for="message">Type your message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+           </div>
+           
+           <div class="form-group">
+            <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Please sign me up for the newsletter
+            </label>
+           </div>
+
+            <button type="submit">Send message</button>
+        </form>
+  </section>  
+</div>
+
+<script> 
+    const toggle_btn=document.querySelector('.toggle_btn')
+    const toggle_btnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick=function(){
+        dropDownMenu.classList.toggle ('open')
+        const isOpen=dropDownMenu.classList.contains ('open')
+
+        toggle_btnIcon.classList=isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
+</body>
+
+
+
+<footer>
+    <div class="footer">
+        <p>&copy;2024 TRAVELER. All rights reserved </p>
+    </div>
+</footer>  
+   
+
+</html>

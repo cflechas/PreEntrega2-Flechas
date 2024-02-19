@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <link rel="stylesheet" href="style.css">
-    <nav>
-        <h2> TRAVELER</h2>
-        <ul>
-            <li> <a href="./index.html">Home</a></li>
-            <li> <a href="Blog.html">Blog</a></li>
-            <li> <a href="Destination.html">Destination</a></li>
-            <li> <a href="Contact.html">Contact us</a></li>
-        </ul>
-        
-    </nav>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>About Us - Traveler</title>
 </head>
+
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> <a href="#">Traveler</a></div>
+            <ul class="links">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="Destination.html">Destination</a></li>
+                <li> <a href="Contact.html">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="blog.html">Blog</a></li>
+            <li> <a href="Destination.html">Destination</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+        </div>
+    </header>
 
     <div class="container"> 
         <div class="left-column">
             <h1>ABOUT US</h1>
             <p>
                 My name is Sara, a travel photographer and adventure travel blogger. I have been traveling the world full-time since 2018 and have published over 600 travel guides on my blog Traveler.
-                I live and breathe adventure. Traveling across six continents, I’ve backpacked across India, climbed Himalyan peaks, crossed a desert on camel-back, cycled through the Arctic Circle, trekked with mountain gorillas, and fought Muay Thai in Thailand.
+                I live and breathe adventure. Traveling across six continents, I’ve backpacked across India, climbed Himalayan peaks, crossed a desert on camel-back, cycled through the Arctic Circle, trekked with mountain gorillas, and fought Muay Thai in Thailand.
                 I draw on my own travels to create inspiring travel guides on topics covering adventure & the outdoors, hiking, travel and photography gear, and tour & accommodation guides.</p>
-         </div>
-         <div class="right-column">
+        </div>
+        <div class="right-column">
             <div class="photo">
                 <img class="image" src="./Photos/about me.jpeg" alt="Aboutme">
             </div>  
+        </div>
     </div>
-    </div>
-    
+
+    <footer>
+        <div class="footer">
+            <p>&copy;2024 TRAVELER. All rights reserved </p>
+        </div>
+    </footer>
+
+    <script> 
+    const toggle_btn=document.querySelector('.toggle_btn')
+    const toggle_btnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick=function(){
+        dropDownMenu.classList.toggle ('open')
+        const isOpen=dropDownMenu.classList.contains ('open')
+
+        toggle_btnIcon.classList=isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
 </body>
-<footer>
-    <div class="footer">
-        <p>&copy;2024 TRAVELER. All rights reserved </p>
-    </div>
-</footer>
+
 </html>

@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
     <link rel="stylesheet" href="style.css">
     
-    <title>Traveler</title>
-
+  
 </head>
-
 <body>
     <header>
         <div class="navbar">
             <div class="logo"> <a href="#">Traveler</a></div>
             <ul class="links">
+                <li> <a href="index.html">Home</a></li>
                 <li> <a href="aboutme.html">About us</a></li>
-                <li> <a href="blog.html">Blog</a></li>
                 <li> <a href="Destination.html">Destination</a></li>
                 <li> <a href="Contact.html">Contact</a></li>
             </ul>
@@ -28,14 +25,28 @@
         </div>
 
         <div class="dropdown_menu">
-            <li> <a href="aboutme.html">About us</a></li>
+            <li> <a href="index.html">Home</a></li>
             <li> <a href="blog.html">Blog</a></li>
             <li> <a href="Destination.html">Destination</a></li>
-             <li> <a href="Contact.html">Contact</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
         </div>
     </header>
+    
+    <div class="principal">
+        <div class="box box1">Stories</div>
+        <div class="box box2">Guides</div>
+        <div class="box box3">Tips</div>
+        <div class="box box4">Photos</div>
+        <div class="box box5">Insights</div>
+     </div>
 
-    <script> 
+<footer>
+    <div class="footer">
+        <p>&copy;2024 TRAVELER. All rights reserved </p>
+    </div>
+</footer>
+
+<script> 
     const toggle_btn=document.querySelector('.toggle_btn')
     const toggle_btnIcon=document.querySelector('.toggle_btn i')
     const dropDownMenu=document.querySelector('.dropdown_menu')
@@ -49,28 +60,5 @@
         : 'fa-solid fa-bars'
     }
     </script>
-   <div class="row"> 
-    <div class="column left">
-        <img class="image" src="./Photos/grand-canyon-sunset.jpg" alt="Grand Canyon">
-     </div>
-     <div class="column right ">
-        <div class="right-box">
-            <img class="image" src="./Photos/food.jpeg" alt="Food">
-        </div>
-        <div class="right-box">
-        <img class="image" src="./Photos/Activities.jpeg" alt="Activities">
-    </div>
-    <div class="right-box">
-    <img class="image" src="./Photos/People.jpeg" alt="People">
-    </div>
-</div>
-</div>
-
 </body>
-<footer>
-    <div class="footer-content">
-        <p>&copy;2024 TRAVELER. All rights reserved </p>
-    </div>
-</footer>
-
 </html>
