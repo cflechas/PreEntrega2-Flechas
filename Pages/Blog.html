@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Traveler blog! Explore our collection of travel articles featuring destinations, tips, and inspiration for your next adventure.">
+    <meta name="keywords" content="travel, blog, destinations, adventure, tips">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    
+  
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> <a href="../index.html">Traveler</a></div>
+            <ul class="links">
+                <li> <a href="./aboutme.html">ABOUT US</a></li>
+                <li> <a href="./Blog.html">BLOG</a></li>
+                <li> <a href="./Destination.html">DESTINATION</a></li>
+                <li> <a href="./Contact.html">CONTACT</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li> <a href="./aboutme.html">ABOUT US</a></li>
+            <li> <a href="./Blog.html">BLOG</a></li>
+            <li> <a href="./Destination.html">DESTINATION</a></li>
+            <li> <a href="./Contact.html">CONTACT</a></li>
+        </div>
+    </header>
+    
+    <div class="gallery">
+        <h2> BLOG</h2>
+        <ul>
+            <li><img src="../Photos/blog california .jpeg" alt="California"></li>
+            <li><img src="../Photos/most-stylish-luggage.jpg" alt="Bags"></li>
+            <li><img src="../Photos/best gift ideas.jpeg" alt="Gifts"></li>
+            <li><img src="../Photos/san diego .jpeg" alt="San Diego"></li>
+        </ul>
+        
+     </div>
+
+<footer>
+    <div class="footer">
+        <p>&copy;2024 TRAVELER. All rights reserved </p>
+    </div>
+</footer>
+
+<script> 
+    const toggle_btn=document.querySelector('.toggle_btn')
+    const toggle_btnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick=function(){
+        dropDownMenu.classList.toggle ('open')
+        const isOpen=dropDownMenu.classList.contains ('open')
+
+        toggle_btnIcon.classList=isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
+</body>
+</html>
