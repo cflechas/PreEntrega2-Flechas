@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     
-    <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+   
+    
     
   
 </head>
@@ -37,36 +37,33 @@
         </div>
     </header>
     
+    
     <div class="gallery">
-        <h2> BLOG</h2>
+        <h1> BLOG</h1>
+        <p>Welcome to our blog oasis! Here, every click unlocks a new chapter of excitement and wonder. Dive into our vibrant community and let your imagination soar as we share tales of breathtaking destinations, hidden gems, and unforgettable experiences. From bustling streets to serene landscapes, we're your go-to source for inspiration, tips, and insider secrets. So pack your bags, buckle up, and join us as we traverse the globe, one exhilarating adventure at a time. Let our blog be your compass, guiding you towards a world of endless possibilities and unforgettable memories!</p>
+        
         <ul>
-            <li><img src="../Photos/blog california .jpeg" alt="California"></li>
-            <li><img src="../Photos/most-stylish-luggage.jpg" alt="Bags"></li>
-            <li><img src="../Photos/best gift ideas.jpeg" alt="Gifts"></li>
-            <li><img src="../Photos/san diego .jpeg" alt="San Diego"></li>
+            <li><img src="../Photos/blog california .jpeg" alt="California"><p> 20 Places to visit in Cali</p></li>
+            <li><img src="../Photos/most-stylish-luggage.jpg" alt="Bags"><p> The most stylish travel bags for women</p></li>
+            <li><img src="../Photos/best gift ideas.jpeg" alt="Gifts"><p> Travel Guift Guide: The best gift ideas for traveleres in 2024</p></li>
+            <li><img src="../Photos/san diego .jpeg" alt="San Diego"><p> 30+ Things to do in San Diego for couples</p></li>
         </ul>
         
      </div>
 
-<footer>
-    <div class="footer">
-        <p>&copy;2024 TRAVELER. All rights reserved </p>
-    </div>
-</footer>
+     <footer>
+        <div class="footer-content">
+            <p>&copy;2024 TRAVELER. All rights reserved </p>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+    </footer>
 
-<script> 
-    const toggle_btn=document.querySelector('.toggle_btn')
-    const toggle_btnIcon=document.querySelector('.toggle_btn i')
-    const dropDownMenu=document.querySelector('.dropdown_menu')
 
-    toggle_btn.onclick=function(){
-        dropDownMenu.classList.toggle ('open')
-        const isOpen=dropDownMenu.classList.contains ('open')
-
-        toggle_btnIcon.classList=isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-    </script>
 </body>
 </html>

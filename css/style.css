@@ -22,6 +22,41 @@ body a {
 body a:hover {
   color: turquoise;
 }
+body h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body p {
+  font-family: "poppins", sans-serif;
+  font-size: 17px;
+  color: white;
+  text-align: justify;
+  line-height: 1.8;
+  padding: 40px;
+}
+
+footer {
+  padding: 20px 0px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 header {
   position: relative;
@@ -36,23 +71,35 @@ header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
 }
-header .navbar .logo a {
+header .logo a {
   font-size: 1.5rem;
   font-weight: bold;
   margin-left: 1px;
 }
-header .navbar .links {
+header .links {
   display: flex;
   gap: 2rem;
   font-family: "poppins", sans-serif;
   font-size: 13px;
+  flex-wrap: wrap;
 }
-header .navbar .toggle_btn {
+header .toggle_btn {
   color: turquoise;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+}
+@media (max-width: 576px) {
+  header .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .action_btn {
@@ -67,6 +114,9 @@ header .navbar .toggle_btn {
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2 ease;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
 .action_btn:hover {
   scale: 1.05;
@@ -97,43 +147,6 @@ header .navbar .toggle_btn {
   align-items: center;
   justify-content: center;
 }
-.dropdown_menu .action_btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 992px) {
-  .navbar .links,
-  .navbar .action_btn {
-    display: none;
-  }
-  .navbar .toggle_btn {
-    display: block;
-  }
-  .dropdown_menu {
-    display: block;
-  }
-}
-@media (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
-  }
-}
-footer {
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  height: 2.5rem;
-}
-footer .footer.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .container {
   display: grid;
@@ -147,6 +160,7 @@ footer .footer.content {
   color: white;
   text-align: justify;
   line-height: 1.8;
+  padding: 0px 21px;
 }
 .container h1 {
   font-family: "poppins", sans-serif;
@@ -187,6 +201,83 @@ footer .footer.content {
   padding: 20px;
 }
 
+.gallery ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 32px 0;
+}
+.gallery ul li {
+  margin: 0 10px;
+  flex-basis: calc(50% - 20px);
+}
+.gallery ul li img {
+  width: 100%;
+  height: auto;
+}
+.gallery ul li p {
+  padding: 5%;
+  text-align: center;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+}
+
+.container-form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.contact-form {
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "poppins", sans-serif;
+  width: 50%;
+  height: 25%;
+}
+.contact-form button {
+  background-color: salmon;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #FF6F61;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+}
+.submit-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.submit-form input,
+.submit-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .row {
     grid-template-columns: 1fr;
@@ -209,58 +300,10 @@ footer .footer.content {
     order: 2;
   }
 }
-.gallery ul {
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-  margin: 32px 0;
-}
-.gallery ul li {
-  margin: 0 10px;
-  flex-basis: calc(50% - 20px);
-}
-.gallery ul li img {
-  width: 100%;
-  height: auto;
-}
-
-.contact-form {
-  margin: 10px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  font-family: "poppins", sans-serif;
-}
-.contact-form .form-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  gap: 10px;
-}
-.contact-form .form-row .form-group {
-  flex: 1;
-  margin-bottom: 10px;
-}
-.contact-form .form-row label {
-  display: block;
-  margin-bottom: 5px;
-}
-.contact-form .form-row input,
-.contact-form .form-row textarea {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-}
-.contact-form button {
-  background-color: salmon;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.contact-form button:hover {
-  background-color: #FF6F61;
+@media (max-width: 576px) {
+  .contact-form {
+    height: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

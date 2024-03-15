@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Traveler for inquiries, feedback, or collaboration opportunities. Fill out the contact form to reach us.">
+    <meta name="description"
+        content="Contact Traveler for inquiries, feedback, or collaboration opportunities. Fill out the contact form to reach us.">
     <meta name="keywords" content="contact, reach us, feedback, collaboration, inquiries">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Contact us</title>
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -32,63 +37,57 @@
             <li> <a href="./Contact.html">CONTACT</a></li>
         </div>
     </header>
-    <div class="container">
-    <section class="contact-form">
-   
-        <h2>Contact us</h2>
-        <form action="submit-form">
-            <div class="form-row">
-            <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            </div>
+    <div class="container-form">
+        <section class="contact-form">
 
-            <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" requiered>
-            </div>
-            </div>
+            <h2>Contact us</h2>
+            <form action="submit-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-           <div class="form-group">
-            <label for="message">Type your message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-           </div>
-           
-           <div class="form-group">
-            <label for="newsletter">
-            <input type="checkbox" id="newsletter" name="newsletter">
-            Please sign me up for the newsletter
-            </label>
-           </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" requiered>
+                    </div>
+                </div>
 
-            <button type="submit">Send message</button>
-        </form>
-  </section>  
-</div>
+                <div class="form-group">
+                    <label for="message">Type your message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
 
-<script> 
-    const toggle_btn=document.querySelector('.toggle_btn')
-    const toggle_btnIcon=document.querySelector('.toggle_btn i')
-    const dropDownMenu=document.querySelector('.dropdown_menu')
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please sign me up for the newsletter
+                    </label>
+                </div>
 
-    toggle_btn.onclick=function(){
-        dropDownMenu.classList.toggle ('open')
-        const isOpen=dropDownMenu.classList.contains ('open')
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </div>
 
-        toggle_btnIcon.classList=isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-    </script>
+
 </body>
 
 
 
 <footer>
-    <div class="footer">
+    <div class="footer-content">
         <p>&copy;2024 TRAVELER. All rights reserved </p>
     </div>
-</footer>  
-   
+    <div class="social-media-icons">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+</footer>
+
 
 </html>

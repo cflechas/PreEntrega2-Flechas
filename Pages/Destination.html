@@ -33,7 +33,8 @@
         </div>
     </header>
     <div class="gallery">
-        <h2> BLOG</h2>
+        <h1> DESTINATION</h1>
+        <p>Step into our destination playground, where wanderlust runs wild and adventure awaits! Dive into a world of stunning landscapes, vibrant cities, and hidden gems just waiting to be discovered. From sun-kissed beaches to snow-capped peaks, our curated selection of destinations promises to ignite your sense of wanderlust and inspire your next journey. Get ready to embark on a virtual exploration like never before, as Traveler guides you to the most exciting and breathtaking destinations around the globe.</p>
         <ul>
             <li><img src="../Photos/america.jpeg" alt="America"></li>
             <li><img src="../Photos/asia.jpeg" alt="Asia"></li>
@@ -44,24 +45,18 @@
      </div>
 
 
-<footer>
-    <div class="footer">
-        <p>&copy;2024 TRAVELER. All rights reserved </p>
-    </div>
-</footer>  
-<script> 
-    const toggle_btn=document.querySelector('.toggle_btn')
-    const toggle_btnIcon=document.querySelector('.toggle_btn i')
-    const dropDownMenu=document.querySelector('.dropdown_menu')
+     <footer>
+        <div class="footer-content">
+            <p>&copy;2024 TRAVELER. All rights reserved </p>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+    </footer>
 
-    toggle_btn.onclick=function(){
-        dropDownMenu.classList.toggle ('open')
-        const isOpen=dropDownMenu.classList.contains ('open')
-
-        toggle_btnIcon.classList=isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-    </script>
     </body>
 </html>
